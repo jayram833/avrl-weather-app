@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Jayram Pansare Weather App</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="header__text">Jayram Pansare's Weather App</p>
+    </header>
+
+    <div class="container">
+      <div class="container__left">
+        <button class="btn__getweather btn">Get Weather</button>
+        <table class="city__names">
+          <tr>
+            <th class="thead">City</th>
+          </tr>
+          <tr class="city1">
+            <td>London</td>
+          </tr>
+          <tr class="city2">
+            <td>New York</td>
+          </tr>
+          <tr class="city3">
+            <td>Los Angles</td>
+          </tr>
+          <tr class="city4">
+            <td>Las Vegas</td>
+          </tr>
+        </table>
+      </div>
+      <div class="container__right">
+        <span class="top__row">
+          <input
+            type="text"
+            id="POITable"
+            class="city__name"
+            placeholder="City Name"
+          />
+          <button class="btn__search btn">Search</button>
+        </span>
+        <table class="weather__data">
+          <tr>
+            <th class="thead">City</th>
+            <th class="thead">Description</th>
+            <th class="thead">Temparature (<span>&#8451;</span>)</th>
+            <th class="thead">Pressure (hPa)</th>
+            <th class="thead">Data age (hrs)</th>
+            <th class="thead"></th>
+          </tr>
+          <tr>
+            <td class="noData" colspan="6">No Data</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
